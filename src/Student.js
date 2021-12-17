@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Student.css";
 
-export default function Students(props) {
+export default function Student(props) {
   const { pic, firstName, lastName, email, company, skill, grades } = props;
 
   const [showGrades, setShowGrades] = useState(false);

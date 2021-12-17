@@ -1,0 +1,22 @@
+.Search {
+  padding: 0px 12px;
+}
+
+.Search input {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px lightgrey solid;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.Search input::placeholder {
+  color: darkgrey;
+}
+
+.Search input:focus {
+  border-bottom: 1px black solid;
+}
