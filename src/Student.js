@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import Tags from "./Tags";
 import "./Student.css";
 
-export default function Student(props) {
-  const { pic, firstName, lastName, email, company, skill, grades } = props;
+export default function Student({ setTag, data }) {
+  const { id, pic, firstName, lastName, email, company, skill, grades, tags } =
+    data;
 
   const [showGrades, setShowGrades] = useState(false);
 
@@ -38,6 +40,7 @@ export default function Student(props) {
             </div>
           )}
         </div>
+        <Tags tags={tags} setTag={setTag} id={id} />
       </div>
     </div>
   );
