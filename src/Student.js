@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Tags from "./Tags";
 import "./Student.css";
 
-export default function Student({ setTag, data }) {
+export default function Student({ addTag, data }) {
   const { id, pic, firstName, lastName, email, company, skill, grades, tags } =
     data;
 
@@ -40,7 +40,7 @@ export default function Student({ setTag, data }) {
             </div>
           )}
         </div>
-        <Tags tags={tags} setTag={setTag} id={id} />
+        <Tags tags={tags} addTag={addTag} id={id} />
       </div>
     </div>
   );

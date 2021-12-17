@@ -5,3 +5,4 @@ How to optimize speed for API call?
 Scrollbar customization
 Error handling
 Testing
+mobile responsive?

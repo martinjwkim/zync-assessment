@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Tags.css";
 
-export default function Tags({ tags, setTag, id }) {
+export default function Tags({ tags, addTag, id }) {
   const [inputValue, setInputValue] = useState("");
 
   const handleChange = (e) => {
@@ -10,7 +10,7 @@ export default function Tags({ tags, setTag, id }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    inputValue && setTag(inputValue, id);
+    inputValue && addTag(inputValue, id);
     setInputValue("");
   };
 

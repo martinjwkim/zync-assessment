@@ -25,7 +25,7 @@ export default function Students() {
 
   const cleanUp = (arr) => [...new Set(arr)].sort();
 
-  const setTag = (tag, id) => {
+  const addTag = (tag, id) => {
     setStudentsData(
       studentsData.map((studentData) =>
         studentData.id === id
@@ -54,7 +54,7 @@ export default function Students() {
                   studentData.tags.some((tag) => tag.includes(tagFilter)))
             )
             .map((data) => (
-              <Student key={data.id} data={data} setTag={setTag} />
+              <Student key={data.id} data={data} addTag={addTag} />
             ))}
       </div>
     </div>
