@@ -1,0 +1,24 @@
+.Student {
+  display: flex;
+}
+
+.Student-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+
+.Student-pic img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.Student-info h1 {
+  text-transform: uppercase;
+}

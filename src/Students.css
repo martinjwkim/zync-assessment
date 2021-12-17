@@ -1,0 +1,9 @@
+.Students {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 80vh;
+  overflow-y: scroll;
+  background: #ffffff;
+  border-radius: 10px;
+}
