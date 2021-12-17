@@ -1,24 +1,98 @@
 .Student {
   display: flex;
+  align-items: top;
+  padding: 15px 30px;
+  gap: 30px;
 }
 
 .Student-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   border: 1px solid lightgray;
+  margin-top: 15px;
 }
 
 .Student-pic img {
-  flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
 }
 
-.Student-info h1 {
+.Student-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+}
+
+.Student-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.Student-header button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: darkgrey;
+  margin: 0px;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  padding: 0px;
+}
+
+.Student-header button:before,
+.Student-header button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-radius: 2px;
+  background: darkgrey;
+}
+
+.Student-header button:before {
+  right: 16px;
+  width: 4px;
+  height: 24px;
+  margin-top: -12px;
+}
+
+.Student-header button:after {
+  right: 6px;
+  width: 24px;
+  height: 4px;
+  margin-top: -2px;
+}
+.Student-header button.expanded:before {
+  height: 0;
+  margin-top: 0;
+}
+
+.Student-header button:hover:before,
+.Student-header button:hover:after {
+  background: black;
+}
+
+.Student-header h1 {
   text-transform: uppercase;
+  margin: 0px;
+  font-size: 36px;
+}
+
+.Student-body p {
+  padding: 0px 20px;
+  margin: 5px 0px;
+}
+
+.Student-grades p {
+  margin: 1px 0px;
+}
+
+.Student-grades span {
+  padding: 0px 23px;
 }

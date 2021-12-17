@@ -1,9 +1,14 @@
 .Students {
   width: 100%;
   max-width: 800px;
-  height: 100%;
   max-height: 80vh;
   overflow-y: scroll;
   background: #ffffff;
   border-radius: 10px;
+  display: grid;
+  flex-direction: column;
+}
+
+.Students > :not(:last-child) {
+  border-bottom: 1px solid #efefef;
 }
